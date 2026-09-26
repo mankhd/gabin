@@ -1,0 +1,6 @@
+{
+  "name": "Gabin Bar Ice Cream",
+  "description": "Landing page resmi Gabin Ice Cream di Jl Melati Indah, Panam Pekanbaru. Dibuat dengan biskuit renyah dan 100% es krim lembut berkualitas tinggi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
