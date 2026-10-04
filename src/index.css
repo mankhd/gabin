@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --font-display: 'Fredoka', cursive, system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-fredoka {
+  font-family: 'Fredoka', cursive, system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2.5deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(22, 163, 74, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(22, 163, 74, 0.75);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.2s infinite;
+}
