@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ShoppingBag, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
+import { SiteHeader } from './components/SiteHeader';
+import { InfoModals } from './components/InfoModals';
 import { ExploreMenuSection } from './components/ExploreMenuSection';
 import { CartDrawer } from './components/CartDrawer';
 import { PRODUCTS } from './data';
@@ -10,6 +12,8 @@ const STORAGE_KEY = 'creamy_cart';
 
 export default function App() {
   const [isCartOpen, setIsCartOpen] = useState<boolean>(false);
+  const [isLocationOpen, setIsLocationOpen] = useState<boolean>(false);
+  const [isContactOpen, setIsContactOpen] = useState<boolean>(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [waFallbackUrl, setWaFallbackUrl] = useState<string | null>(null);
   const [badgeTrigger, setBadgeTrigger] = useState<number>(0);
@@ -143,8 +147,17 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen min-h-[100dvh] bg-[#93675c] font-body text-[#3b2723] flex flex-col justify-center selection:bg-[#201817] selection:text-white relative">
+    <div className="min-h-screen min-h-[100dvh] bg-[#93675c] font-body text-[#3b2723] flex flex-col justify-start selection:bg-[#201817] selection:text-white relative">
       
+      {/* Top Site Header with Big Logo, Lokasi, and Kontak Popups */}
+      <SiteHeader
+        totalCartCount={totalCartCount}
+        badgeTrigger={badgeTrigger}
+        onOpenCart={() => setIsCartOpen(true)}
+        onOpenLocation={() => setIsLocationOpen(true)}
+        onOpenContact={() => setIsContactOpen(true)}
+      />
+
       {/* Main Content: Explore Menu Section */}
       <main className="w-full flex-1 flex flex-col justify-center">
         <ExploreMenuSection
@@ -152,39 +165,6 @@ export default function App() {
           onBuyNow={handleBuyNow}
         />
       </main>
-
-      {/* Top Floating Cart Button (Logo Only) with Safe-Area Inset Support */}
-      <div 
-        className="fixed z-40"
-        style={{
-          top: 'max(14px, env(safe-area-inset-top, 14px))',
-          right: 'max(14px, env(safe-area-inset-right, 14px))',
-        }}
-      >
-        <motion.button
-          whileHover={{ scale: 1.1, rotate: [0, -5, 5, 0] }}
-          whileTap={{ scale: 0.9 }}
-          type="button"
-          onClick={() => setIsCartOpen(true)}
-          aria-label="Buka Keranjang Belanja"
-          title="Keranjang Belanja"
-          className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#201817]/95 hover:bg-[#382b29] text-[#fcd34d] flex items-center justify-center shadow-xl hover:shadow-2xl transition-colors border-2 border-white/25 backdrop-blur-md cursor-pointer group"
-        >
-          <ShoppingBag className="w-5 h-5 text-amber-300 group-hover:scale-110 transition-transform" />
-          
-          {totalCartCount > 0 && (
-            <motion.span
-              key={badgeTrigger}
-              initial={{ scale: 0.6 }}
-              animate={{ scale: [1.35, 1] }}
-              transition={{ type: 'spring', stiffness: 500, damping: 15 }}
-              className="absolute -top-1 -right-1 min-w-[20px] h-5 px-1 bg-red-600 text-white text-[11px] font-bold rounded-full flex items-center justify-center shadow-md border-2 border-[#201817]"
-            >
-              {totalCartCount}
-            </motion.span>
-          )}
-        </motion.button>
-      </div>
 
       {/* Floating Animated Toast Notification */}
       <AnimatePresence>
@@ -213,6 +193,15 @@ export default function App() {
         onRemoveItem={handleRemoveCartItem}
         onCheckout={handleCheckout}
         waFallbackUrl={waFallbackUrl}
+      />
+
+      {/* Popups: Lokasi & Kontak */}
+      <InfoModals
+        isLocationOpen={isLocationOpen}
+        onCloseLocation={() => setIsLocationOpen(false)}
+        isContactOpen={isContactOpen}
+        onCloseContact={() => setIsContactOpen(false)}
+        onShowToast={(msg) => setToastMessage(msg)}
       />
 
     </div>

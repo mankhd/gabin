@@ -46,4 +46,13 @@ export const PRODUCTS: Product[] = [
     image: '/assets/images/regenerated_image_1790068977977.png',
     category: 'Classic Vanilla',
   },
+  {
+    id: 'prod-6',
+    title: 'Gabin Mangga',
+    subtitle: 'Gabin Mangga',
+    price: 'Rp 10.000',
+    calories: 230,
+    image: '/assets/images/jokowi.png',
+    category: 'Mangga',
+  },
 ];
