@@ -178,7 +178,7 @@ export const InfoModals: React.FC<InfoModalsProps> = ({
               {/* Body */}
               <div className="p-6 space-y-3 max-h-[75vh] overflow-y-auto">
                 <div className="space-y-2.5">
-                  {/* WhatsApp Channel */}
+                  {/* WhatsApp Resmi Channel */}
                   <a
                     href="https://wa.me/6285139987445?text=Halo%20Gabin%20Ice%20Cream%2C%20saya%20mau%20tanya%20informasi%20menu%20dan%20pemesanan"
                     target="_blank"
@@ -196,9 +196,27 @@ export const InfoModals: React.FC<InfoModalsProps> = ({
                     <span className="text-slate-400 group-hover:translate-x-1 group-hover:text-slate-900 transition-all font-bold text-lg">→</span>
                   </a>
 
+                  {/* Saluran WhatsApp Channel */}
+                  <a
+                    href="https://whatsapp.com/channel/0029VbE1LeZFi8xY7FVC2I1v"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3.5 p-3 bg-white border-1.5 border-[#ebd9c5] hover:border-[#201817] rounded-2xl shadow-xs hover:shadow-md transition-all group"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-[#25d366] text-white flex items-center justify-center shrink-0 text-lg">
+                      📢
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-fredoka font-bold text-slate-900 text-sm">Saluran WhatsApp (GabinPKU Update)</div>
+                      <div className="text-xs font-semibold text-slate-600">Info Promo, Varian Baru &amp; Event</div>
+                      <div className="text-[11px] font-bold text-emerald-700">🟢 Ikuti Saluran Resmi WhatsApp</div>
+                    </div>
+                    <span className="text-slate-400 group-hover:translate-x-1 group-hover:text-slate-900 transition-all font-bold text-lg">→</span>
+                  </a>
+
                   {/* GrabFood Channel */}
                   <a
-                    href="https://r.grab.com/g/6-20261006_233155_acf4457306b14048aae48578e17d5c0a_MEXMPS-6-C8JUCJ6KLJVXL2"
+                    href="https://r.grab.com/o/TxtkzW4Q"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3.5 p-3 bg-white border-1.5 border-[#ebd9c5] hover:border-[#201817] rounded-2xl shadow-xs hover:shadow-md transition-all group"
@@ -210,6 +228,42 @@ export const InfoModals: React.FC<InfoModalsProps> = ({
                       <div className="font-fredoka font-bold text-slate-900 text-sm">GrabFood Resmi</div>
                       <div className="text-xs font-semibold text-slate-600">Pesan Antar via GrabFood</div>
                       <div className="text-[11px] font-bold text-emerald-700">🟢 Buka di Aplikasi GrabFood</div>
+                    </div>
+                    <span className="text-slate-400 group-hover:translate-x-1 group-hover:text-slate-900 transition-all font-bold text-lg">→</span>
+                  </a>
+
+                  {/* GoFood Channel */}
+                  <a
+                    href="https://gofood.link/a/UQEW1Jm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3.5 p-3 bg-white border-1.5 border-[#ebd9c5] hover:border-[#201817] rounded-2xl shadow-xs hover:shadow-md transition-all group"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-[#ed2736] text-white flex items-center justify-center shrink-0 text-lg">
+                      🍽️
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-fredoka font-bold text-slate-900 text-sm">GoFood (Gojek) Resmi</div>
+                      <div className="text-xs font-semibold text-slate-600">Pesan Antar via GoFood</div>
+                      <div className="text-[11px] font-bold text-red-600">🟢 Buka di Aplikasi GoFood</div>
+                    </div>
+                    <span className="text-slate-400 group-hover:translate-x-1 group-hover:text-slate-900 transition-all font-bold text-lg">→</span>
+                  </a>
+
+                  {/* ShopeeFood Channel */}
+                  <a
+                    href="https://spf.shopee.co.id/9pf4fgCgS2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3.5 p-3 bg-white border-1.5 border-[#ebd9c5] hover:border-[#201817] rounded-2xl shadow-xs hover:shadow-md transition-all group"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-[#ee4d2d] text-white flex items-center justify-center shrink-0 text-lg">
+                      🛍️
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-fredoka font-bold text-slate-900 text-sm">ShopeeFood Resmi</div>
+                      <div className="text-xs font-semibold text-slate-600">Pesan Antar via ShopeeFood</div>
+                      <div className="text-[11px] font-bold text-orange-600">🟢 Buka di Aplikasi ShopeeFood</div>
                     </div>
                     <span className="text-slate-400 group-hover:translate-x-1 group-hover:text-slate-900 transition-all font-bold text-lg">→</span>
                   </a>
@@ -267,15 +321,6 @@ export const InfoModals: React.FC<InfoModalsProps> = ({
                     </div>
                     <span className="text-slate-400 group-hover:translate-x-1 group-hover:text-slate-900 transition-all font-bold text-lg">→</span>
                   </a>
-
-                  {/* Shopee & Gojek Notice */}
-                  <div className="p-3 bg-slate-50 border border-dashed border-slate-300 rounded-2xl flex items-center gap-3">
-                    <span className="text-xl">🛵</span>
-                    <div className="text-xs text-slate-600">
-                      <span className="font-bold text-slate-800 block">ShopeeFood &amp; Gojek (GoFood)</span>
-                      Segera menyusul &amp; dapat dipesan dalam waktu dekat!
-                    </div>
-                  </div>
                 </div>
 
                 <p className="text-xs text-center text-slate-500 pt-1">

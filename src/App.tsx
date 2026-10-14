@@ -18,7 +18,7 @@ export default function App() {
   const [waFallbackUrl, setWaFallbackUrl] = useState<string | null>(null);
   const [badgeTrigger, setBadgeTrigger] = useState<number>(0);
 
-  // Initialize cart from localStorage if available, or initial default items
+  // Initialize cart from localStorage if available, or empty [] for new devices
   const [cartItems, setCartItems] = useState<CartItem[]>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -29,22 +29,7 @@ export default function App() {
     } catch {
       // Fallback
     }
-    return [
-      {
-        id: 'prod-1',
-        name: 'Gabin Oreo',
-        price: 10000,
-        quantity: 1,
-        image: '/assets/images/regenerated_image_1790068969600.png',
-      },
-      {
-        id: 'prod-2',
-        name: 'Gabin Matcha',
-        price: 10000,
-        quantity: 1,
-        image: '/assets/images/regenerated_image_1790068971665.png',
-      },
-    ];
+    return [];
   });
 
   // Save to localStorage whenever cartItems changes

@@ -55,4 +55,13 @@ export const PRODUCTS: Product[] = [
     image: '/assets/images/jokowi.png',
     category: 'Mangga',
   },
+  {
+    id: 'prod-7',
+    title: 'Gabin Durian',
+    subtitle: 'Gabin Durian',
+    price: 'Rp 13.000',
+    calories: 290,
+    image: '/assets/images/gabin_durian.png',
+    category: 'Durian Asli',
+  },
 ];
