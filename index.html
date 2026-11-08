@@ -1,0 +1,1078 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>GabinPKU – Gabin Ice Cream Panam Pekanbaru | Buka 08.00 - 21.00 WIB</title>
+    <meta name="description" content="Website resmi GabinPKU Panam Pekanbaru - 17 varian Gabin Ice Cream renyah & dingin seharga Rp10.000. Buka setiap hari pukul 08.00-21.00 WIB. Pesan langsung ke WhatsApp 0851-3998-7445." />
+    <meta property="og:title" content="GabinPKU – Gabin Ice Cream Panam Pekanbaru | Rp10.000" />
+    <meta property="og:description" content="17 varian biskuit es krim gabin renyah khas Panam Pekanbaru. Buka 08.00-21.00 WIB. Langsung order WhatsApp!" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/aistudio/image_e28c07c4.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <!-- 1. Top Navbar -->
+    <header class="navbar">
+      <div class="nav-container">
+        
+        <!-- Brand -->
+        <a href="#" class="brand-link" title="GabinPKU by 3R - Panam Pekanbaru" aria-label="GabinPKU Panam Pekanbaru">
+          <div class="brand-icon">
+            <img src="assets/aistudio/image_e28c07c4.png" alt="Logo GabinPKU by 3R" class="brand-logo-img" onerror="this.onerror=null; this.src='assets/images/gabin_pku_logo.png';" />
+          </div>
+        </a>
+
+        <!-- Menu Navigation -->
+        <nav class="nav-menu">
+          <a href="#menu-katalog" class="nav-link">17 Varian Menu</a>
+          <button type="button" class="btn-nav-text" onclick="toggleStoreInfo(true)">Lokasi</button>
+          <a href="#kontak-resmi" class="nav-link">Kontak & Pesan</a>
+        </nav>
+
+        <!-- Action Controls -->
+        <div class="nav-actions">
+          <div class="btn-info-store" style="cursor: default; pointer-events: none;">
+            <span>🟢 08.00-21.00</span>
+          </div>
+
+          <button type="button" class="btn-cart-nav" onclick="toggleCart(true)">
+            <span style="font-size: 1.15rem;">🛒</span>
+            <div class="cart-nav-info">
+              <span class="cart-nav-title">Keranjang</span>
+              <span id="cart-summary" class="cart-nav-amount">Kosong</span>
+            </div>
+            <span id="cart-badge" class="cart-nav-badge" style="display: none;">0</span>
+          </button>
+
+          <!-- Mobile / Tablet Hamburger Toggle Button -->
+          <button type="button" id="btn-mobile-menu" class="btn-hamburger" onclick="toggleMobileNav()" aria-label="Menu Navigasi Mobile">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile & Tablet Dropdown Navigation Bar -->
+      <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+        <div class="mobile-nav-inner">
+          <a href="#menu-katalog" class="mobile-nav-item" onclick="toggleMobileNav(false)">
+            <span class="m-icon">🍨</span>
+            <div>
+              <strong>17 Varian Menu</strong>
+              <small>Lihat semua varian Gabin Ice Cream</small>
+            </div>
+            <span class="m-arrow">→</span>
+          </a>
+          <button type="button" class="mobile-nav-item" onclick="toggleMobileNav(false); toggleStoreInfo(true);">
+            <span class="m-icon">📍</span>
+            <div>
+              <strong>Lokasi & Patokan Gerai</strong>
+              <small>Jl. Melati Indah, Panam, Pekanbaru</small>
+            </div>
+            <span class="m-arrow">→</span>
+          </button>
+          <a href="#kontak-resmi" class="mobile-nav-item" onclick="toggleMobileNav(false)">
+            <span class="m-icon">💬</span>
+            <div>
+              <strong>Kontak & Saluran Resmi</strong>
+              <small>WhatsApp, Grab, GoFood, Shopee, IG</small>
+            </div>
+            <span class="m-arrow">→</span>
+          </a>
+          <div class="mobile-nav-footer">
+            <span class="mobile-hours-badge">🟢 Buka 08.00 – 21.00 WIB</span>
+            <a href="https://wa.me/6285139987445" target="_blank" rel="noopener noreferrer" class="mobile-wa-btn">
+              <span>💬 Chat WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero-section">
+      <div class="hero-wrapper">
+        
+        <!-- Text Content -->
+        <div class="hero-text">
+          <div class="pill-hero">
+            <span>✨ Gabin Ice Cream Favorit di Panam, Pekanbaru</span>
+          </div>
+
+          <h1 class="hero-title">
+            Sensasi Renyahnya Biskuit Gabin, <span>Dingin Lembutnya</span> Es Krim!
+          </h1>
+
+          <p class="hero-desc">
+            Gabin yang renyah dipadukan dengan isian es krim yang padat, tebal, dan creamy. Perpaduan biskuit dan es krim yang manis dan dingin! Ada 18 pilihan rasa lezat yang siap nemenin harimu. Yuk, cobain Gabin Ice Cream hanya di GabinPKU.
+          </p>
+
+          <div class="hero-price-strip">
+            <span class="hero-price-label">Harga Spesial:</span>
+            <span class="hero-price-val">Rp 10.000</span>
+            <span class="hero-price-note">-an / pcs</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#menu-katalog" class="btn-cta-main">
+              <span>Pilih Varian Sekarang</span>
+              <span>→</span>
+            </a>
+            <button type="button" class="btn-cta-alt" onclick="toggleStoreInfo(true)">
+              <span>📍 Info Toko Panam</span>
+            </button>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <span style="color: #10b981;">✔</span> Halal & Higienis
+            </div>
+            <div class="trust-item">
+              <span style="color: #fbbf24;">🕒</span> Buka 08.00 – 21.00 WIB
+            </div>
+            <div class="trust-item">
+              <span style="color: #f43f5e;">📍</span> Jl. HR. Soebrantas, Panam
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Showcase -->
+        <div class="hero-visual">
+          <div class="hero-card-frame">
+            <div class="hero-img-box">
+              <img
+                src="assets/aistudio/image_e28c07c4.png"
+                alt="GabinPKU by 3R - Sensasi Renyah Dingin Es Krim Biskuit"
+                onerror="this.onerror=null; this.src='assets/images/gabin_pku_logo.png';"
+              />
+              <div class="hero-img-overlay">
+                <div class="hero-img-text">
+                  <strong>Gabin Ice Cream Asli</strong>
+                  <span>Biskuit Renyah • Es Krim Tebal</span>
+                </div>
+                <div class="hero-img-tag">Rp 10.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Menu Katalog 17 Varian Section -->
+    <section id="menu-katalog" class="menu-section">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <span class="section-pill">Katalog Lengkap</span>
+          <h2 class="section-title">Variant Menu GabinPKU</h2>
+          <p class="section-subtitle">
+            Klik kartu es krim atau tombol Tambah untuk memasukkan langsung ke keranjang belanja Anda!
+          </p>
+        </div>
+
+        <!-- Live Search -->
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Cari rasa (cth: Matcha, 08, Cokelat)..."
+            oninput="handleSearch(this.value)"
+          />
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs">
+        <button type="button" class="filter-btn active" onclick="setCategory('all', this)">Semua (18 Varian)</button>
+        <button type="button" class="filter-btn" onclick="setCategory('best-seller', this)">⭐ Best Seller (6 Varian)</button>
+      </div>
+
+      <!-- Product Cards Grid -->
+      <div id="product-grid" class="product-grid">
+
+        <div class="product-card" data-id="gabin-01" data-category="best-seller" onclick="handleCardClick('gabin-01', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 01</span>
+              <span class="card-tag">Best Seller</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793785732715.png" alt="No. 01 Gabin Coklat" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Coklat</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim cokelat yang lembut dan creamy, menghadirkan rasa cokelat yang manis dan nikmat di setiap gigitan.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 10.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-01')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-02" data-category="" onclick="handleCardClick('gabin-02', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 02</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793785736938.png" alt="No. 02 Gabin Stroberi" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Stroberi</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim stroberi yang lembut dan creamy.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 10.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-02')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-03" data-category="best-seller" onclick="handleCardClick('gabin-03', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 03</span>
+              <span class="card-tag">Best Seller</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793785740651.png" alt="No. 03 Gabin Oreo" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Oreo</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim Oreo dan potongan biskuit Oreo.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 10.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-03')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-04" data-category="" onclick="handleCardClick('gabin-04', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 04</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793785744357.png" alt="No. 04 Gabin Matcha" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Matcha</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim matcha yang lembut dan khas.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 10.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-04')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-05" data-category="best-seller" onclick="handleCardClick('gabin-05', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 05</span>
+              <span class="card-tag">Best Seller</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793785749034.png" alt="No. 05 Gabin Vanilla" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Vanilla</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim vanilla yang lembut dan creamy.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 10.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-05')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-06" data-category="best-seller" onclick="handleCardClick('gabin-06', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 06</span>
+              <span class="card-tag">Best Seller</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793786509641.png" alt="No. 06 Gabin Durian" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Durian</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim durian dan remahan regal yang lembut dan khas.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 13.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-06')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-07" data-category="best-seller" onclick="handleCardClick('gabin-07', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 07</span>
+              <span class="card-tag">Best Seller</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793802374301.png" alt="No. 07 Gabin Blueberry" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Blueberry</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim blueberry yang lembut dan creamy.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 13.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-07')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-08" data-category="" onclick="handleCardClick('gabin-08', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 08</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793802380779.png" alt="No. 08 Gabin Vanilla Gojiberry" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Vanilla Gojiberry</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim vanilla dan gojiberry.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 13.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-08')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-09" data-category="" onclick="handleCardClick('gabin-09', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 09</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793802385036.png" alt="No. 09 Gabin Stroberi Matcha" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Stroberi Matcha</h3>
+              <p class="card-desc">Gabin renyah dengan perpaduan es krim stroberi dan matcha.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 14.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-09')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-10" data-category="best-seller" onclick="handleCardClick('gabin-10', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 10</span>
+              <span class="card-tag">Best Seller</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793802389811.png" alt="No. 10 Gabin Lotus Biscoff" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Lotus Biscoff</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim lembut dan Lotus Biscoff.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 15.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-10')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-11" data-category="" onclick="handleCardClick('gabin-11', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 11</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793786530142.png" alt="No. 11 Gabin Vanilla Keju" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Vanilla Keju</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim vanilla dan taburan keju.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 13.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-11')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-12" data-category="" onclick="handleCardClick('gabin-12', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 12</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793786534250.png" alt="No. 12 Gabin Milo" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Milo</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim Milo yang lembut dengan rasa cokelat malt.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 10.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-12')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-13" data-category="" onclick="handleCardClick('gabin-13', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 13</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793786538178.png" alt="No. 13 Gabin Taro Chocochips" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Taro Chocochips</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim taro dan tambahan chocochips.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 14.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-13')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-14" data-category="" onclick="handleCardClick('gabin-14', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 14</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793786541820.png" alt="No. 14 Gabin Mangga" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Mangga</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim mangga yang lembut dan segar.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 10.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-14')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-15" data-category="" onclick="handleCardClick('gabin-15', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 15</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793787039307.png" alt="No. 15 Gabin Avocado Oreo" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Avocado Oreo</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim avocado dan potongan Oreo.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 13.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-15')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-16" data-category="" onclick="handleCardClick('gabin-16', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 16</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793888641928.png" alt="No. 16 Gabin Vanilla Regal" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Vanilla Regal</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim vanilla dan remahan biskuit Regal.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 13.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-16')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-17" data-category="" onclick="handleCardClick('gabin-17', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 17</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1793888638828.png" alt="No. 17 Gabin Jagung Keju" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Jagung Keju</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim jagung dan keju.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Harga</span>
+              <span class="card-price-amount">Rp 13.000</span>
+            </div>
+
+            <button type="button" class="btn-card-add" onclick="event.stopPropagation(); addToCart('gabin-17')">
+              + Tambah
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="gabin-18" data-category="" onclick="handleCardClick('gabin-18', event)">
+          <div>
+            <div class="card-top">
+              <span class="card-no">No. 18</span>
+              <span class="card-tag" style="background: #fef3c7; color: #92400e;">SOON</span>
+            </div>
+
+            <div class="card-thumb-wrap">
+              <img src="assets/images/regenerated_image_1794149109031.jpg" alt="No. 18 Gabin Chocomint" onerror="handleImgError(this)" loading="lazy" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="card-name">Gabin Chocomint</h3>
+              <p class="card-desc">Gabin renyah dengan isian es krim mint yang lembut dan creamy, dipadukan dengan cokelat.</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="card-price-block">
+              <span class="card-price-label">Status</span>
+              <span class="card-price-amount" style="color: #d97706; font-size: 1.15rem; font-weight: 900; letter-spacing: 0.05em;">SOON</span>
+            </div>
+
+            <button type="button" class="btn-card-add" disabled style="background: #fef3c7; color: #92400e; cursor: not-allowed; border: 1px solid #fde68a; font-weight: 800; opacity: 0.95;" onclick="event.stopPropagation();">
+              SOON
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informasi Penyimpanan (Storage Guide) -->
+      <div class="storage-info-banner">
+        <div class="storage-info-icon-badge">
+          <span class="storage-icon">❄️</span>
+        </div>
+        <div class="storage-info-body">
+          <div class="storage-badge-pill">Informasi Penting</div>
+          <h3 class="storage-info-heading">INFORMASI PENYIMPANAN</h3>
+          <p class="storage-info-p">
+            Gabin Ice Cream menggunakan es krim asli (pure ice cream), sehingga mudah mencair jika berada di suhu ruang terlalu lama.
+          </p>
+          <p class="storage-info-p">
+            Jika tidak langsung dimakan, segera masukkan ke dalam freezer agar tetap beku dan kualitasnya terjaga.
+          </p>
+          <div class="storage-info-callout">
+            <span class="storage-callout-icon">❄️</span>
+            <span class="storage-callout-text">Nikmati dalam keadaan dingin untuk rasa terbaik!</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Kontak & Info Pemesanan -->
+    <section id="kontak-resmi" class="contact-section">
+      <div class="contact-wrap">
+        <div class="contact-head">
+          <span class="section-pill">Saluran Resmi</span>
+          <h2 class="section-title">Hubungi GabinPKU</h2>
+          <p class="section-subtitle">Pesan langsung ke Whatsapp atau pantau akun resmi kami.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- 1. Saluran Whatsapp -->
+          <a href="https://www.whatsapp.com/channel/0029VbE1LeZFi8xY7FVC2I1v" target="_blank" rel="noopener noreferrer" class="contact-card active">
+            <div>
+              <div class="c-icon-wrap">
+                <div class="c-icon active" style="background: #059669;">📻</div>
+                <span class="c-badge active" style="background: #d1fae5; color: #065f46;">Saluran Resmi</span>
+              </div>
+              <h3>Saluran Whatsapp</h3>
+              <p class="c-desc">Ikuti saluran resmi WhatsApp untuk info promo kilat, diskon dan event spesial GabinPKU.</p>
+            </div>
+            <div class="c-footer">
+              <span style="color: #34d399;">Saluran GabinPKU</span>
+              <span>Buka Saluran →</span>
+            </div>
+          </a>
+
+          <!-- 2. Grab -->
+          <a href="https://r.grab.com/o/TxtkzW4Q" target="_blank" rel="noopener noreferrer" class="contact-card active">
+            <div>
+              <div class="c-icon-wrap">
+                <div class="c-icon active" style="background: #16a34a;">🛵</div>
+                <span class="c-badge active" style="background: #dcfce7; color: #166534;">Pesan Antar</span>
+              </div>
+              <h3>Grab</h3>
+              <p class="c-desc">Pesan antar cepat langsung via aplikasi Grab ke lokasi Anda di Pekanbaru.</p>
+            </div>
+            <div class="c-footer">
+              <span style="color: #4ade80;">GabinPKU di Grab</span>
+              <span>Buka Grab →</span>
+            </div>
+          </a>
+
+          <!-- 3. GoFood -->
+          <a href="https://gofood.link/a/UQEW1Jm" target="_blank" rel="noopener noreferrer" class="contact-card active">
+            <div>
+              <div class="c-icon-wrap">
+                <div class="c-icon active" style="background: #dc2626;">🍴</div>
+                <span class="c-badge active" style="background: #fee2e2; color: #991b1b;">Pesan Antar</span>
+              </div>
+              <h3>GoFood</h3>
+              <p class="c-desc">Layanan pesan antar via GoFood di aplikasi Gojek Pekanbaru.</p>
+            </div>
+            <div class="c-footer">
+              <span style="color: #f87171;">GabinPKU di GoFood</span>
+              <span>Buka GoFood →</span>
+            </div>
+          </a>
+
+          <!-- 4. Shopee -->
+          <a href="https://spf.shopee.co.id/9pf4fgCgS2" target="_blank" rel="noopener noreferrer" class="contact-card active">
+            <div>
+              <div class="c-icon-wrap">
+                <div class="c-icon active" style="background: #ea580c;">🏪</div>
+                <span class="c-badge active" style="background: #ffedd5; color: #9a3412;">Toko Resmi</span>
+              </div>
+              <h3>Shopee</h3>
+              <p class="c-desc">Beli produk GabinPKU via aplikasi Shopee dengan berbagai promo menarik.</p>
+            </div>
+            <div class="c-footer">
+              <span style="color: #fb923c;">GabinPKU di Shopee</span>
+              <span>Beli di Shopee →</span>
+            </div>
+          </a>
+
+          <!-- 5. Instagram -->
+          <a href="https://www.instagram.com/gabinpku/" target="_blank" rel="noopener noreferrer" class="contact-card active">
+            <div>
+              <div class="c-icon-wrap">
+                <div class="c-icon active" style="background: #e11d48;">📸</div>
+                <span class="c-badge active" style="background: #ffe4e6; color: #9f1239;">@gabinpku</span>
+              </div>
+              <h3>Instagram</h3>
+              <p class="c-desc">Koleksi foto produk, review pembeli, dan jadwal varian favorit harian.</p>
+            </div>
+            <div class="c-footer">
+              <span style="color: #fb7185;">@gabinpku</span>
+              <span>Kunjungi IG →</span>
+            </div>
+          </a>
+
+          <!-- 6. Threads -->
+          <a href="https://www.threads.com/@gabinpku" target="_blank" rel="noopener noreferrer" class="contact-card active">
+            <div>
+              <div class="c-icon-wrap">
+                <div class="c-icon active" style="background: #1c1917;">🧵</div>
+                <span class="c-badge active" style="background: #f5f5f4; color: #292524;">@gabinpku</span>
+              </div>
+              <h3>Threads</h3>
+              <p class="c-desc">Update harian, obrolan santai, dan cerita seru seputar es krim gabin.</p>
+            </div>
+            <div class="c-footer">
+              <span style="color: #d6d3d1;">@gabinpku</span>
+              <span>Buka Threads →</span>
+            </div>
+          </a>
+
+          <!-- 7. TikTok -->
+          <a href="https://www.tiktok.com/@gabinpku" target="_blank" rel="noopener noreferrer" class="contact-card active">
+            <div>
+              <div class="c-icon-wrap">
+                <div class="c-icon active" style="background: #09090b;">🎵</div>
+                <span class="c-badge active" style="background: #ecfeff; color: #155e75;">@gabinpku</span>
+              </div>
+              <h3>TikTok</h3>
+              <p class="c-desc">Video ASMR gigitan gabin krispi renyah dan pembuatan es krim tebal.</p>
+            </div>
+            <div class="c-footer">
+              <span style="color: #67e8f9;">@gabinpku</span>
+              <span>Tonton TikTok →</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- WhatsApp Direct Banner -->
+        <div style="margin-top: 2rem; background: #047857; color: white; border-radius: 1.5rem; padding: 1.5rem 2rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; box-shadow: 0 10px 25px -5px rgba(4, 120, 87, 0.3);">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="font-size: 2.2rem; background: rgba(255,255,255,0.2); width: 3.5rem; height: 3.5rem; border-radius: 1rem; display: flex; align-items: center; justify-content: center;">💬</div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 800; font-family: var(--font-display);">Pesan Cepat via WhatsApp Langsung</h3>
+              <p style="font-size: 0.85rem; color: #a7f3d0; margin-top: 0.2rem;">Hubungi admin di <strong>0851-3998-7445</strong> untuk konfirmasi pesanan & pengiriman kurir lokal Panam.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/6285139987445" target="_blank" rel="noopener noreferrer" class="btn-card-add" style="background: white; color: #065f46; text-decoration: none; padding: 0.85rem 1.5rem; font-size: 0.95rem; font-weight: 800; border-radius: 1rem;">
+            Chat WhatsApp Pemesanan →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h4 style="display: flex; align-items: center; gap: 0.65rem;">
+              <img src="assets/aistudio/image_e28c07c4.png" alt="Logo GabinPKU" onerror="this.onerror=null; this.src='assets/images/gabin_pku_logo.png';" style="width: 34px; height: 34px; border-radius: 10px; border: 1.5px solid #f59e0b; object-fit: cover; flex-shrink: 0;" />
+              <span>Gabin<span style="color: #fbbf24;">PKU</span></span>
+            </h4>
+            <p>
+              Gabin yang renyah dipadukan dengan isian es krim yang padat, tebal, dan creamy. Perpaduan biskuit dan es krim yang manis dan dingin! Ada 18 pilihan rasa lezat yang siap nemenin harimu. Yuk, cobain Gabin Ice Cream hanya di GabinPKU.
+            </p>
+            <p style="margin-top: 0.5rem; color: #fbbf24; font-weight: 700;">
+              📍 Jl. Melati Indah, Kel. Delima, Panam, Kota Pekanbaru • Buka Setiap Hari Pukul 08.00 – 21.00 WIB
+            </p>
+          </div>
+
+          <div>
+            <h5 style="color: white; margin-bottom: 0.75rem; font-size: 0.95rem;">Pesan Online & Sosial</h5>
+            <div style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.82rem;">
+              <a href="https://wa.me/6285139987445" target="_blank" rel="noopener noreferrer" style="color: #34d399; font-weight: 700; text-decoration: none;">💬 WhatsApp: 0851-3998-7445</a>
+              <a href="https://r.grab.com/o/TxtkzW4Q" target="_blank" rel="noopener noreferrer" style="color: #6ee7b7; text-decoration: none;">🛵 GrabFood GabinPKU</a>
+              <a href="https://gofood.link/a/UQEW1Jm" target="_blank" rel="noopener noreferrer" style="color: #fca5a5; text-decoration: none;">🍴 GoFood GabinPKU</a>
+              <a href="https://spf.shopee.co.id/9pf4fgCgS2" target="_blank" rel="noopener noreferrer" style="color: #fdba74; text-decoration: none;">🏪 Shopee GabinPKU</a>
+              <a href="https://www.whatsapp.com/channel/0029VbE1LeZFi8xY7FVC2I1v" target="_blank" rel="noopener noreferrer" style="color: #5eead4; text-decoration: none;">📻 Saluran WhatsApp</a>
+              <a href="https://www.instagram.com/gabinpku/" target="_blank" rel="noopener noreferrer" style="color: #f472b6; text-decoration: none;">📸 Instagram @gabinpku</a>
+              <a href="https://www.tiktok.com/@gabinpku" target="_blank" rel="noopener noreferrer" style="color: #67e8f9; text-decoration: none;">🎵 TikTok @gabinpku</a>
+              <a href="https://www.threads.com/@gabinpku" target="_blank" rel="noopener noreferrer" style="color: #d6d3d1; text-decoration: none;">🧵 Threads @gabinpku</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 GabinPKU – Gabin Ice Cream Panam Pekanbaru. All rights reserved.</p>
+          <button type="button" onclick="scrollToTop()" class="btn-back-to-top">
+            Kembali ke Atas ↑
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Overlay Backdrop -->
+    <div id="main-overlay" class="overlay" onclick="closeAllModals()"></div>
+
+    <!-- 6. Cart Drawer -->
+    <div id="cart-drawer" class="cart-drawer">
+      <div class="drawer-header">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 1.3rem;">🍦</span>
+          <div>
+            <h3>Keranjang GabinPKU</h3>
+            <span style="font-size: 0.75rem; color: #78350f;">Panam, Pekanbaru • 08.00 - 21.00 WIB</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <button type="button" onclick="clearCart()" style="background: none; border: none; color: #e11d48; font-size: 0.75rem; font-weight: 800; cursor: pointer;">
+            Kosongkan
+          </button>
+          <button type="button" class="btn-close-drawer" onclick="toggleCart(false)">✕</button>
+        </div>
+      </div>
+
+      <div id="cart-drawer-items" class="drawer-body">
+        <!-- Rendered by script.js -->
+      </div>
+
+      <div id="cart-drawer-footer" class="drawer-footer">
+        <!-- Add-Ons Section -->
+        <div class="cart-addons-section">
+          <div class="cart-addons-head">
+            <span class="cart-addons-title">
+              <span>❄️</span> Add-Ons Kemasan
+            </span>
+            <span id="addon-badge-status" class="addon-badge-free" style="display: none;">GRATIS</span>
+          </div>
+
+          <label class="addon-card" id="addon-card-label" for="addon-cooler-bag">
+            <input type="checkbox" id="addon-cooler-bag" class="addon-checkbox" onchange="toggleCoolerBag(this.checked)" />
+            <div class="addon-content">
+              <div class="addon-top-row">
+                <span class="addon-name">Cooler Bag & Ice Gel</span>
+                <span id="addon-price-label" class="addon-price">Rp 3.000</span>
+              </div>
+              <p class="addon-desc">
+                Pembelian 5+ pcs GRATIS, Pembelian dibawah 5 pcs akan menggunakan plastik jika tidak memilih ini.
+              </p>
+            </div>
+          </label>
+        </div>
+
+        <div class="cart-summary-breakdown" style="font-size: 0.82rem; color: #57534e; margin-bottom: 0.65rem; border-bottom: 1px dashed #e7ded4; padding-bottom: 0.65rem;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+            <span>Subtotal (<span id="cart-subtotal-qty">0 pcs</span>):</span>
+            <span id="cart-subtotal-price" style="font-weight: 700; color: #1c1917;">Rp 0</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span>Cooler Bag & Ice Gel:</span>
+            <span id="cart-addon-price-summary" style="font-weight: 700; color: #059669;">Rp 0 (Plastik)</span>
+          </div>
+        </div>
+
+        <div class="cart-calc-row">
+          <span>Total Pembayaran:</span>
+          <span id="cart-total-price" class="cart-calc-val">Rp 0</span>
+        </div>
+
+        <button type="button" class="btn-wa-checkout" onclick="checkoutWhatsApp()">
+          <span>💬</span>
+          <span>Pesan Sekarang ke WhatsApp</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 7. Store Info Modal -->
+    <div id="store-modal" class="modal-box">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 1.3rem;">📍</span>
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800;">Informasi Gerai GabinPKU</h3>
+            <span style="font-size: 0.75rem; opacity: 0.9;">Panam, Pekanbaru</span>
+          </div>
+        </div>
+        <button type="button" class="btn-close-drawer" onclick="toggleStoreInfo(false)">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="store-info-block">
+          <div class="store-info-title">
+            <span>📍</span> Lokasi & Alamat Lengkap
+          </div>
+          <div class="store-info-val">
+            Jl. Melati Indah, Kel. Delima, Panam, Kota Pekanbaru, Riau 28292
+          </div>
+          <div class="store-info-sub">
+            <strong>Patokan:</strong> Perumahan
+          </div>
+          <div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="https://maps.app.goo.gl/Uemx7xhvgdnpxJQJ8" target="_blank" rel="noopener noreferrer" class="btn-cta-alt" style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.55rem 1rem; font-size: 0.8rem; background: #059669; color: white; text-decoration: none; border-radius: 0.75rem; font-weight: 800;">
+              📍 Buka di Google Maps ↗
+            </a>
+            <button type="button" class="btn-cta-alt" style="padding: 0.55rem 0.85rem; font-size: 0.78rem; background: #fbf5ec; color: #78350f; border-radius: 0.75rem;" onclick="copyStoreAddress()">
+              📋 Salin Alamat
+            </button>
+          </div>
+        </div>
+
+        <div class="store-info-block">
+          <div class="store-info-title">
+            <span>🕒</span> Jam Operasional
+          </div>
+          <div class="store-info-val">
+            Pukul 08.00 – 21.00 WIB
+          </div>
+          <div class="store-info-sub">
+            Buka setiap hari (Senin s/d Minggu) melayani pesanan Pickup, Online, dan COD.
+          </div>
+        </div>
+
+        <div class="store-info-block">
+          <div class="store-info-title">
+            <span>🛵</span> Pilihan Layanan
+          </div>
+          <div class="store-info-sub" style="margin-top: 0.35rem; line-height: 1.6;">
+            • <strong>Pickup:</strong> Pesanan diambil langsung oleh pembeli di lokasi kami.<br />
+            • <strong>Online:</strong> Pesanan melalui aplikasi atau layanan pesan antar online seperti Grab, Gojek dan Shopee.<br />
+            • <strong>COD (Cash on Delivery):</strong> Pesanan diantar ke alamat pembeli dan pembayaran dilakukan saat pesanan diterima.
+          </div>
+        </div>
+
+        <div style="margin-top: 1.25rem;">
+          <a href="https://wa.me/6285139987445" target="_blank" rel="noopener noreferrer" class="btn-wa-checkout">
+            <span>💬 Chat WhatsApp Gerai Panam</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Mobile Sticky Bottom Bar (When Cart Has Items) -->
+    <div id="mobile-sticky-bar" class="mobile-sticky-bar hide" onclick="toggleCart(true)">
+      <div style="display: flex; align-items: center; gap: 0.65rem;">
+        <span style="font-size: 1.25rem;">🍦</span>
+        <div>
+          <span style="font-size: 0.7rem; opacity: 0.8; display: block;">Total Keranjang (<span id="sticky-qty">0 pcs</span>)</span>
+          <strong id="sticky-total" style="font-size: 0.95rem; font-family: var(--font-display);">Rp 0</strong>
+        </div>
+      </div>
+      <div style="background: #f59e0b; color: #1e0d07; padding: 0.4rem 0.85rem; border-radius: 0.75rem; font-size: 0.8rem; font-weight: 800;">
+        Lihat Pesanan →
+      </div>
+    </div>
+
+    <!-- 9. Floating Feedback Toast -->
+    <div id="toast" class="toast">
+      <span style="font-size: 1.2rem;">🍦</span>
+      <span id="toast-text">Produk dimasukkan ke keranjang!</span>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
